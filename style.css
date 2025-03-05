@@ -54,11 +54,14 @@
     gap: 15px;
 }
 
-.reviewer-profile img{
-    border: 1px solid var(--black);
+.reviewer-profile .face-card{
+    background: url('images/sea-7364988_1280.jpg');
+    background-position: center;
+    background-size: 200%;
+    border: 1px solid transparent;
     border-radius: 50%;
     height: 50px;
-    width: 56px;
+    width: 50px;
 }
 
 .fullName-container {
@@ -96,7 +99,13 @@
     padding: 1rem;
     height: max-content;
 
-    .reviewer-profile img{
+    .reviewer-profile .face-card{
+        background: url('images/sea-7364988_1280.jpg');
+        background-position: center;
+        background-size: 200%;
+        object-fit: fill;
+        background-repeat: no-repeat;
+        border: none;
         border-radius: 1rem;
         height: auto;
         width: 34rem;
@@ -164,17 +173,22 @@
 
 .theImages {
     display: flex;
-    img{
-    border: 1px solid var(--black);
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    opacity: 50%;
-    margin: 25px 5px;
-}
+
+    .face-card{
+        background: url('images/sea-7364988_1280.jpg');
+        background-position: center;
+        background-size: 200%;
+        background-repeat: no-repeat;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        opacity: 50%;
+        margin: 25px 5px;
+    }
     
 }
-img:nth-child(even){
+.face-card:nth-child(even){
     height: 50px;
     width: 50px;
     opacity: 100%;
